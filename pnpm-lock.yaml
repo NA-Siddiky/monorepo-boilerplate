@@ -28,7 +28,7 @@ importers:
         specifier: ^7.20.0
         version: 7.23.9(@babel/core@7.23.9)
       '@babel/runtime':
-        specifier: ^7.23.9
+        specifier: ^7.20.0
         version: 7.23.9
       '@react-native/babel-preset':
         specifier: 0.73.21
