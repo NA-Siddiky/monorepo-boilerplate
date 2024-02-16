@@ -1,10 +1,14 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "0.0.1",
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "stream": true,
   "packages": [
-    "apps/**",
-    "packages/**"
+    "apps/*",
+    "apps/android/*",
+    "apps/web/*",
+    "packages/*",
+    "packages/android/*",
+    "packages/web/*"
   ]
 }

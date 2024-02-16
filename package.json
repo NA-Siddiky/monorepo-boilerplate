@@ -2,13 +2,19 @@
   "name": "@root/core",
   "private": true,
   "scripts": {
-    "build": "yarn lerna run build",
-    "clean": "yarn lerna clean"
+    "android": "cd apps/android/unzip_blog_app && npm run start",
+    "web": "cd apps/web/unzip_blog && npm run dev",
+    "build": "npm lerna run build",
+    "clean": "npm lerna clean"
   },
   "workspaces": {
     "packages": [
-      "apps/**",
-      "packages/**"
+      "apps/*",
+      "apps/android/*",
+      "apps/web/*",
+      "packages/*",
+      "packages/android/*",
+      "packages/web/*"
     ],
     "nohoist": []
   },
