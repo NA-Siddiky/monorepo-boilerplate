@@ -2,8 +2,15 @@
   "name": "@root/core",
   "private": true,
   "scripts": {
-    "build": "pnpm lerna run build",
-    "clean": "pnpm lerna clean"
+    "build": "yarn lerna run build",
+    "clean": "yarn lerna clean"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/**",
+      "packages/**"
+    ],
+    "nohoist": []
   },
   "dependencies": {},
   "devDependencies": {
