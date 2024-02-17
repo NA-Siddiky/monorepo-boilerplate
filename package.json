@@ -10,7 +10,13 @@
       "apps/**",
       "packages/**"
     ],
-    "nohoist": []
+    "nohoist": [
+      "**/react-native",
+      "**/@react-native-community",
+      "**/@react-native-community/**",
+      "**/@react-native",
+      "**/@react-native/**"
+    ]
   },
   "dependencies": {},
   "devDependencies": {

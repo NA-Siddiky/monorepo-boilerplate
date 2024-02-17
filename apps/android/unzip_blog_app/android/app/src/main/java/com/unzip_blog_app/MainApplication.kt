@@ -1,4 +1,4 @@
-package com.unzip_blog
+package com.unzip_blog_app
 
 import android.app.Application
 import com.facebook.react.PackageList
