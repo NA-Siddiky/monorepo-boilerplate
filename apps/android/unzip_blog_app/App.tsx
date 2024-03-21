@@ -5,25 +5,17 @@
  * @format
  */
 
-import React from 'react';
 import type {PropsWithChildren} from 'react';
+import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
   useColorScheme,
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import FetchPosts from './textComponent';
 
 type SectionProps = PropsWithChildren<{
@@ -63,11 +55,9 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  
-
   return (
     <SafeAreaView style={backgroundStyle}>
-     <FetchPosts/>
+      <FetchPosts />
     </SafeAreaView>
   );
 }
